@@ -17,7 +17,7 @@
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
-            <groupId>net.vrabie</groupId>
+            <groupId>md.cobot</groupId>
             <artifactId>cobot-service</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
