@@ -1,0 +1,6 @@
+cobot-presentation/target
+cobot-integration/target
+cobot-service/target
+webserver/target
+test/target
+.idea
