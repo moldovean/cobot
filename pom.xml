@@ -7,8 +7,8 @@
     <modules>
         <module>test</module>
         <module>cobot-integration</module>
-        <module>cobot-presentation</module>
         <module>cobot-service</module>
+        <module>cobot-presentation</module>
         <module>webserver</module>
     </modules>
     <groupId>md.cobot</groupId>
