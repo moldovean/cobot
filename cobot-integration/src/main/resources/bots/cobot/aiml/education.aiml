@@ -3,7 +3,7 @@
 
     <category>
         <pattern>abcde</pattern>
-        <template>fg hijklmnop</template>
+        <template>edcba</template>
     </category>
 
     <category>
