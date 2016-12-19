@@ -1,0 +1,108 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding = "UTF-8">
+
+    <!-- Interactive Learning -->
+    <category>
+        <pattern>learn question * answer *</pattern>
+        <template>
+            <think>
+                <learnf>
+                    <category>
+                        <pattern><eval><star/></eval></pattern>
+                        <template><eval><star index="2"/></eval></template>
+                    </category>
+                </learnf>
+            </think>
+            Bine, numaidecât voi răspunde cu "<star index="2"/>" la "<star/>" data viitoare.
+        </template>
+    </category>
+
+    <category>
+        <pattern>wrong</pattern>
+        <template>Ce ar fi trebuit să răspund?</template>
+    </category>
+    <category>
+        <pattern>greși</pattern>
+        <template>Ce ar fi trebuit să răspund?</template>
+    </category>
+    <category>
+        <pattern>gresi</pattern>
+        <template>Ce ar fi trebuit să răspund?</template>
+    </category>
+    <category>
+        <pattern>greşit</pattern>
+        <template>Ce ar fi trebuit să răspund?</template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>Ce ar fi trebuit să răspund</that>
+        <template>
+            <think>
+                <learnf>
+                    <category>
+                        <pattern><eval><input index="3"/></eval></pattern>
+                        <template><eval><star/></eval></template>
+                    </category>
+                </learnf>
+            </think>
+            Am s-o iau în considerație. Data viitoare, numaidecât voi răspunde cu "<star/>" la "<input index="3"/>".
+        </template>
+    </category>
+
+    <category>
+        <pattern>LEARN * FI *</pattern>
+        <template>
+            Bine, presupunem că <star index="1"/> este <star index="2"/>.
+            <srai>XEDUCATE CE FI XSPLIT <star index="1"/> XSPLIT <star index="2"/></srai>
+            <srai>XEDUCATE UNDE FI XSPLIT <star index="1"/> XSPLIT <star index="2"/></srai>
+            <srai>XEDUCATE CINE FI XSPLIT <star index="1"/> XSPLIT <star index="2"/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LEARN * SUNT *</pattern>
+        <template>
+            Bine, presupunem că <star index="1"/> este <star index="2"/>.
+            <srai>XEDUCATE CE FI XSPLIT <star index="1"/> XSPLIT <star index="2"/></srai>
+            <srai>XEDUCATE UNDE FI XSPLIT <star index="1"/> XSPLIT <star index="2"/></srai>
+            <srai>XEDUCATE CINE FI XSPLIT <star index="1"/> XSPLIT <star index="2"/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>LEARN * AVEA *</pattern>
+        <template>
+            Ok I will learn that <star index="1"/> are <star index="2"/>.
+            <srai>XEDUCATE WHAT ARE XSPLIT <star index="1"/> XSPLIT <star index="2"/></srai>
+            <srai>XEDUCATE WHERE ARE XSPLIT <star index="1"/> XSPLIT <star index="2"/></srai>
+            <srai>XEDUCATE WHO ARE XSPLIT <star index="1"/> XSPLIT <star index="2"/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>XEDUCATE * XSPLIT * XSPLIT *</pattern>
+        <template>
+            <learnf>
+                <category>
+                    <pattern>
+                        <eval><uppercase><star index="1"/> <star index="3"/></uppercase></eval>
+                    </pattern>
+                    <template>
+                        <eval><star index="2"/></eval>
+                    </template>
+                </category>
+            </learnf>
+            <learnf>
+                <category>
+                    <pattern>
+                        <eval><uppercase><star index="1"/> <star index="2"/></uppercase></eval>
+                    </pattern>
+                    <template>
+                        <eval><star index="3"/></eval>
+                    </template>
+                </category>
+            </learnf>
+        </template>
+    </category>
+</aiml>

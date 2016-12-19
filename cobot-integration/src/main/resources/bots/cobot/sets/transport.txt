@@ -1,0 +1,7 @@
+autobuz
+troleibuz
+avion
+vapor
+căruță
+rutieră
+marșrutcă

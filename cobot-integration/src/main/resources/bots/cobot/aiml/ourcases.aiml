@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding="UTF-8">
+
+
+    <!--Dimineața mi s-a cerut să întorc biletul la troleibuz înapoi-->
+    <category>
+        <pattern><set>timeperiods</set> eu ^ cere sine ^ <set>transport</set> <set>back</set></pattern>
+        <template>  Vă recomandăm să raportați acest caz, în domeniul transporturilor, la CNA. <srai>CORRUPTION</srai>  </template>
+    </category>
+
+    <category>
+        <pattern>^ nu eu ^ cere sine ^ <set>back</set></pattern>
+        <template>  Nu consider că acest caz se încadrează într-un caz de corupție. <srai>CORRUPTION</srai>  </template>
+    </category>
+
+
+</aiml>

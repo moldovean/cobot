@@ -1,0 +1,35 @@
+mi-e    mie este
+mi-a    mie a
+mi-am    mie am
+mi-aș    mie aș
+m-am    mă am
+m-au    mă a
+m-a    el mă a
+s-a    se a
+să-mi    să îmi
+ți-a    ție a
+ți-aș    ție și
+ți-am    ție am
+ți-e    ție este
+ți-l    ție îl
+dă-l    dă îl
+n-ar    nu ar
+n-ai    nu ai
+c-o    că una
+n-o    nu o
+asta-i    asta este
+l-ai    îl ai
+l-a    îl a
+l-am    îl am
+da-mi    dă îmi
+într-o    întru una singură
+care-i    care este
+cine-i    cine este
+unde-i    unde este
+cares    care sunt
+cines    cine sunt
+undes    unde sunt
+ce-i    ce este
+cei    ce este
+te-a    te a
+i-a    el a
