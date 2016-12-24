@@ -7,6 +7,7 @@
     </category>
 
     <!--Profesoara ne pune note joase daca nu vrem să-i oferim cadouri scumpe.-->
+    <!--for test.-->
     <category>
         <pattern><set>professions</set> nou pune nota jos dacă nu vrea ^ oferi cadou ^</pattern>
         <template>Seamănă cu un caz de corupție din domeniul educației. <srai>CORRUPTION</srai></template>
