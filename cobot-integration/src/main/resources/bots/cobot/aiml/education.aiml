@@ -6,18 +6,21 @@
         <template>edcba</template>
     </category>
 
+    <!--Profesoara ne pune note joase daca nu vrem să-i oferim cadouri scumpe.-->
     <category>
-        <pattern><set>professions</set> nou pune nota jos dacă nu vrea oferi cadou ^</pattern>
+        <pattern><set>professions</set> nou pune nota jos dacă nu vrea ^ oferi cadou ^</pattern>
         <template>Seamănă cu un caz de corupție din domeniul educației. <srai>CORRUPTION</srai></template>
     </category>
 
+    <!--Profesoara ne pune note joase-->
     <category>
         <pattern><set>professions</set> nou pune nota jos </pattern>
         <template>Nu seamana cu un caz de coruptie.</template>
     </category>
 
+    <!--mie mi s-a cerut 200 de lei dacă aș vrea să am notă mai mare de 5-->
     <category>
-        <pattern>eu avea cere ^ leu ^ ca sine avea vrea nota mai mare de 5</pattern>
+        <pattern>^ avea cere ^ leu ^ dacă ^ vrea ^ nota mai ^ de 5</pattern>
         <template>Cazul dvs pare a fi un caz de corupție <srai>CORRUPTION</srai></template>
     </category>
 
