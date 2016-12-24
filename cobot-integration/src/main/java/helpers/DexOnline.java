@@ -41,7 +41,7 @@ public class DexOnline {
         return formatedResult;
     }
 
-    public static String getDexDefinitions(List<String> words) {
+    public static String getDexDefinition(List<String> words) {
         Element definition;
         StringBuilder response = new StringBuilder();
 

@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * Created by cobot on 11/24/16.
  */
-public class PlayPlainBot {
+public class PlayServicesBot {
     public static void main(String[] args) {
         Cobot cobot = new Cobot();
         Scanner scanner = new Scanner(System.in);

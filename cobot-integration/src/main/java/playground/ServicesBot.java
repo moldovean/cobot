@@ -6,7 +6,7 @@ import nlp.Tokenizer;
 /**
  * Created by avrabie on 12/21/2016.
  */
-public class PlainBot {
+public class ServicesBot {
     public static String chat(String utterance) {
         Cobot cobot = new Cobot();
         utterance = utterance.toLowerCase();

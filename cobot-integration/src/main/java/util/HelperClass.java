@@ -2,6 +2,7 @@ package util;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,7 +18,7 @@ public class HelperClass {
             Method m = null;
             if (args.size() > 3) {
                 m = aClass.getDeclaredMethod(args.get(1), List.class);
-                res = (String) m.invoke(obj, args.subList(2,args.size()));
+                res = (String) m.invoke(obj, new ArrayList<String>(args.subList(2,args.size())));
             } else {
                 m = aClass.getDeclaredMethod(args.get(1), String.class);
                 res = (String) m.invoke(obj, args.get(2));

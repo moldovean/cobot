@@ -67,6 +67,7 @@ public class Cobot {
         matcher = rexExp.matcher(answer);
         if(matcher.find()){
             arguments = ArgumentTokenizer.tokenize(matcher.group(1));
+            //String classResult = HelperClass.callHelperClass(arguments);
             answer += HelperClass.callHelperClass(arguments);
             return answer;
         }

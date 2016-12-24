@@ -19,6 +19,15 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <resources>
+            <resource>
+                <directory>../cobot-integration/src/main/resources</directory>
+            </resource>
+        </resources>
+
+    </build>
+
 
 
 </project>

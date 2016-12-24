@@ -1,7 +1,7 @@
 package plain;
 
 import org.junit.Test;
-import playground.PlainBot;
+import playground.ServicesBot;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,9 +14,9 @@ public class TestPlainBot {
     @Test
     public void testBot(){
 
-        PlainBot plainBot = new PlainBot();
+        ServicesBot servicesBot = new ServicesBot();
         String utterance = "ce este cna";
-        String response = plainBot.chat(utterance);
+        String response = servicesBot.chat(utterance);
         assertEquals("cna  este  Centrul Național Anticorupție", response);
     }
 

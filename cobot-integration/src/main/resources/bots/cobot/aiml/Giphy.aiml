@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding = "UTF-8">
+
+    <category>
+        <pattern>CE înseamnă *</pattern>
+        <template>`DexOnline getDexDefinition <star index="1"></star>`</template>
+    </category>
+
+    <category>
+        <pattern>IMAGINE *</pattern>
+        <template>`GiphyOnline get <star index="1"></star>`</template>
+    </category>
+
+    <category>
+        <pattern><set>doresc</set> o <set>imagine</set> cu *</pattern>
+        <template>
+            <srai>IMAGINE <star index="3"></star></srai>
+        </template>
+    </category>
+</aiml>

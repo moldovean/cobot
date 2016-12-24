@@ -30,7 +30,7 @@
     <category>
         <pattern>DA</pattern>
         <that>Ați dori să depuneți o plângere în mod oficial asupra acestui caz</that>
-        <template>Atunci completați acest <a href="www.cna.md">formular</a>. </template>
+        <template>Atunci completați acest <a href="`WebAddresses getWebAddress denunț`">formular</a>. </template>
     </category>
 
         <!--if yes-->

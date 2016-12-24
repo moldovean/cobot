@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static helpers.DexOnline.getDexDefinition;
-import static helpers.DexOnline.getDexDefinitions;
+import static helpers.DexOnline.getDexDefinition;
 
 
 /**

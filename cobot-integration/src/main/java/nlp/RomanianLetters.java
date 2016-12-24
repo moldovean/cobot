@@ -33,9 +33,7 @@ public class RomanianLetters {
                 .replaceAll("â","a")
                 .replaceAll("î","i");
     }
-    public static void correctRoLetters(){
 
-    }
 
     public static void main(String[] args) {
         String prop = "Floricică şi-o surcea, ţap ispășitor";
