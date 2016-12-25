@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding = "UTF-8">
+    <!--cum pot scăpa de corupție  ?-->
+    <category>
+        <pattern><set>question</set> ^ putea ^ <set>sillyverbs</set> ^ corupție</pattern>
+        <template>
+            Fii intransigent, încurajează-i și pe alții să raporteze cazurile de corupție la CNA.
+        </template>
+    </category>
+
+    <!--ce am întrebat eu-->
+    <category>
+        <pattern><set>question</set> am întrebat eu</pattern>
+        <template><request index="1" /></template>
+    </category>
+
+    <!--numără până la 10-->
+    <category>
+        <pattern>numără până la <set>number</set></pattern>
+        <template>
+            <think><set name="count">0</set></think>
+            <condition name="count">
+                <li><value><star/></value></li>
+                <li>
+                    <set name="count">
+                        <map><name>successor</name><get name="count"/></map>
+                    </set>
+                    <loop/>
+                </li>
+            </condition>
+        </template>
+    </category>
+
+
+</aiml>

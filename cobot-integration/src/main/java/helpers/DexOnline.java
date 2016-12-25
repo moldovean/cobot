@@ -14,7 +14,7 @@ import static util.EncodeURIComponent.encodeURIComponent;
  */
 public class DexOnline {
 
-    public static String getDexDefinition(String word){
+    public static String get(String word){
         Element definition=null;
         StringBuilder result = new StringBuilder();
         try {
@@ -41,7 +41,7 @@ public class DexOnline {
         return formatedResult;
     }
 
-    public static String getDexDefinition(List<String> words) {
+    public static String get(List<String> words) {
         Element definition;
         StringBuilder response = new StringBuilder();
 

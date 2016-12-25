@@ -3,8 +3,8 @@ package playground.old;
 import java.util.ArrayList;
 import java.util.List;
 
-import static helpers.DexOnline.getDexDefinition;
-import static helpers.DexOnline.getDexDefinition;
+import static helpers.DexOnline.get;
+
 
 
 /**
@@ -16,7 +16,7 @@ public class DexOnlineTest {
         List<String> iaka = new ArrayList<>();
         iaka.add("cartier");
         iaka.add("infractiune");
-        System.out.println(getDexDefinition("cartier"));
+        System.out.println(get("cartier"));
 
     }
 

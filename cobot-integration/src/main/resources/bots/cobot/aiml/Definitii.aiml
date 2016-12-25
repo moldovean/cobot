@@ -1,0 +1,100 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<aiml version="2.0" encoding = "UTF-8">
+    <!-- imi puteti spune va rog ce este aceea coruptie ?-->
+    <!-- Definitii -->
+    <!--cum se definește coruptie activă-->
+    <!--ce este corupție pasivă-->
+    <!--la ce vă referiți când spuneți cuvântul corupție-->
+    <!--la ce vă referiți când spuneți cuvântul penitenciar-->
+    <!--La ce va referiți atunci când spuneți cuvântul corupție-->
+
+    <category>
+        <pattern>^ <set>question</set> ^ <set>meaning</set> ^ <set>cnadef</set></pattern>
+        <template>
+            <star index="6"></star>, conform definiției www.cna.md : <map><name>cnadef</name><star index="6"></star></map> </template>
+    </category>
+    <category>
+        <pattern>^ <set>question</set> ^ <set>meaning</set> ^ cuvânta *</pattern>
+        <template>`DexOnline get <star index="6"></star>`</template>
+    </category>
+    <!--la ce vă referiți când spuneți penitenciar-->
+    <category>
+        <pattern>^ <set>question</set> ^ <set>meaning</set> ^ spune *</pattern>
+        <template>`DexOnline get <star index="6"></star>`</template>
+    </category>
+    <!--la ce vă referiți când ziceți penitenciar-->
+    <category>
+        <pattern>^ <set>question</set> ^ <set>meaning</set> <set>timeperiods</set> zice *</pattern>
+        <template>`DexOnline get <star index="6"></star>`</template>
+    </category>
+
+    <category>
+        <pattern>^ <set>question</set> ^ <set>meaning</set> ^ spune cuvânta *</pattern>
+        <template>`DexOnline get <star index="6"></star>`</template>
+    </category>
+    <!--la ce vă referiți când ziceți penitenciar-->
+    <category>
+        <pattern>^ <set>question</set> ^ <set>meaning</set> <set>timeperiods</set> zice cuvânta *</pattern>
+        <template>`DexOnline get <star index="6"></star>`</template>
+    </category>
+
+    <category>
+        <pattern><set>question</set> <set>verb3p</set> <set>cnadef</set></pattern>
+        <template>
+            <star index="3"></star>, conform definiției www.cna.md : <map><name>cnadef</name><star index="3"></star></map> </template>
+    </category>
+    <category>
+        <pattern><set>question</set> <set>verb3p</set> *</pattern>
+        <template>`DexOnline get <star index="3"></star>`</template>
+    </category>
+
+    <category>
+        <pattern>^ defini ^ <set>cnadef</set> ^</pattern>
+        <template>
+            <star index="3"></star> se definește în felul următor: <map><name>cnadef</name><star index="3"></star></map> </template>
+    </category>
+
+    <category>
+        <pattern>^ defini *</pattern>
+        <template>`DexOnline get <star index="2"></star>`</template>
+    </category>
+
+    <category>
+        <pattern>DEFINITIA *</pattern>
+        <template>`DexOnline get <star index="1"></star>`</template>
+    </category>
+
+    <category>
+        <pattern><set>question</set> inseamna *</pattern>
+        <template>
+            <srai>DEFINITIA <star index="2"></star></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ <set>question</set> este aceea *</pattern>
+        <template><srai>DEFINITIA
+            <star index="3"></star></srai></template>
+    </category>
+
+    <category>
+        <pattern>^ <set>question</set> fi acela <set>cnadef</set></pattern>
+        <template>
+            <star index="3"></star> se definește în felul următor: <map><name>cnadef</name><star index="3"></star></map> </template>
+    </category>
+
+    <category>
+        <pattern><set>question</set> fi acela <set>cnadef</set></pattern>
+        <template>
+            <star index="2"></star> se definește în felul următor: <map><name>cnadef</name><star index="3"></star></map> </template>
+    </category>
+
+
+    <category>
+        <pattern>care fi definitia pentru *</pattern>
+        <template>
+            <srai>DEFINITIA <star></star></srai>
+        </template>
+    </category>
+
+</aiml>
