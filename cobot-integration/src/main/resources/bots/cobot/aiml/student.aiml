@@ -4,6 +4,7 @@
     <!-- cases:
     Profesorul i-a pus unei colege de-a mele o notă mult mai mare ca a mea, chiar dacă eu am scris la fel.
     Învățătorul mi-a pus o notă mică iar colegului meu i-a pus nota 10, chiar dacă el nu a scris mult mai bine.
+    am văzut cum profesoara i-a dat de copiat unei eleve
     -->
     <category>
         <pattern><set>professions</set> ^ pune ^ nota ^ <set>professions</set> ^</pattern>
@@ -52,33 +53,39 @@
         <template>Atunci vă doresc mult succes la școală, dacă depistați vreun caz de corupție, nu ezitați</template>
     </category>
 
-    <category>
-        <pattern>DA</pattern>
-        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</that>
-        <template>Atunci completați acest <a href="www.cna.md">formular</a>.</template>
-    </category>
 
-    <category>
-        <pattern>NU</pattern>
-        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</that>
-        <template>Atunci să aveți o zi cât mai plăcută, iar în caz că depistați vre-un caz de corupție reveniți din nou</template>
-    </category>
 
     <!-- Spying student -->
+    <!--am văzut cum profesoara i-a dat de copiat unei eleve-->
     <category>
-        <pattern>Am văzut ^ <set>teacher</set> i-a dat ^ copiat ^ <set>student</set></pattern>
+        <pattern>Am văzut ^ <set>professions</set> i-a dat ^ copiat ^ <set>professions</set></pattern>
+        <template>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</template>
+    </category>
+
+    <category>
+        <pattern>avea vedea ^ <set>professions</set> ^ da ^ copia ^ <set>professions</set></pattern>
+        <template>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</template>
+    </category>
+    <category>
+        <pattern>avea vedea ^ <set>professions</set> ^ da ^ copia ^ <set>professions</set> ^</pattern>
         <template>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</template>
     </category>
 
     <category>
         <pattern>DA</pattern>
-        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</that>
+        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați</that>
+        <template>Aș dori să Vă atenționez că puteți fi trași la răspundere penală dacă oferiți informații false sau neveridice. Sunteți sigur că doriți să îl raportați?</template>
+    </category>
+
+    <category>
+        <pattern>DA</pattern>
+        <that>Aș dori să Vă atenționez că puteți fi trași la răspundere penală dacă oferiți informații false sau neveridice. Sunteți sigur că doriți să îl raportați</that>
         <template>Atunci completați acest <a href="www.cna.md">formular</a>.</template>
     </category>
 
     <category>
         <pattern>NU</pattern>
-        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</that>
+        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați</that>
         <template>Atunci să aveți o zi cât mai plăcută, iar în caz că depistați vre-un caz de corupție reveniți din nou</template>
     </category>
 </aiml>

@@ -5,6 +5,7 @@
 	<!-- Where is CNA? -->
 	<!--unde se află cna?-->
 	<!--unde este sediul cna-ului-->
+	<!--cum aș putea contacta serviciul relații cu publicul?-->
 	<category>
 		<pattern>CNA</pattern>
 		<template>Cu ce ați putea să vă ajut?</template>

@@ -22,7 +22,6 @@ Noroace
 Noroashi
 Noroaşi
 Hi
-Hi, puiuț!
 hey!
 heey
 heeey
@@ -53,6 +52,6 @@ Good afternoon
 What's up
 Zdarova
 Privet
-Privetic, zaicic!
+Privetic, zaicic
 Privetic
 Privetik

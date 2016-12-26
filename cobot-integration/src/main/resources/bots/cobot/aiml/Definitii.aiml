@@ -7,7 +7,20 @@
     <!--la ce vă referiți când spuneți cuvântul corupție-->
     <!--la ce vă referiți când spuneți cuvântul penitenciar-->
     <!--La ce va referiți atunci când spuneți cuvântul corupție-->
+    <!--dă-mi definiția cuvântului corupție-->
+    <!--ce se are în vedere prin corupție-->
+    <!--ce se subînțelege prin corupție-->
 
+    <category>
+        <pattern>de eu definiție cuvânta *</pattern>
+        <template>`DexOnline get <star index="1"></star>`</template>
+    </category>
+
+    <category>
+        <pattern>de eu definiție cuvânta <set>cnadef</set></pattern>
+        <template>
+            <star index="1"></star>, conform definiției www.cna.md : <map><name>cnadef</name><star index="1"></star></map> </template>
+    </category>
 
     <category>
         <pattern>^ <set>question</set> ^ <set>meaning</set> ^ <set>cnadef</set></pattern>
@@ -49,9 +62,15 @@
             <star index="3"></star>, conform definiției www.cna.md : <map><name>cnadef</name><star index="3"></star></map> </template>
     </category>
 
+    <!--ce se are în vedere prin corupție-->
     <category>
         <pattern><set>question</set> <set>is</set> *</pattern>
         <template>`DexOnline get <star index="3"></star>`</template>
+    </category>
+
+    <category>
+        <pattern><set>question</set> <set>is</set> ^ <set>cnadef</set></pattern>
+        <template><star index="4"></star>, conform definiției www.cna.md : <map><name>cnadef</name><star index="4"></star></map> </template>
     </category>
 
     <category>
@@ -78,7 +97,7 @@
     </category>
 
     <category>
-        <pattern>^ <set>question</set> este aceea *</pattern>
+        <pattern>^ <set>question</set> fi *</pattern>
         <template><srai>DEFINITIA
             <star index="3"></star></srai></template>
     </category>
