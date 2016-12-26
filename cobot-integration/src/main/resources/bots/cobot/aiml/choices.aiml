@@ -5,11 +5,18 @@
         <template>Centrul de Combatere a Corupției // Linia Fierbinte // Relații cu Publicul</template>
     </category>
 
+    <!--aș dori să vorbesc cu cineva-->
     <category>
         <pattern>avea dori sine vorbi cu ^</pattern>
         <template>Pe cine ați dori să-i contactați? <srai>CONTACT CHOICE</srai></template>
     </category>
 
+    <category>
+        <pattern>avea dori sine contacta ^</pattern>
+        <template>Pe cine ați dori să-i contactați? <srai>CONTACT CHOICE</srai></template>
+    </category>
+
+    <!--am nevoie de ...-->
     <category>
         <pattern>avea nevoie ^</pattern>
         <template> Voi considera sa ofer servicii de <star></star> în viitor. La moment eu pot oferi <br/>
@@ -25,6 +32,7 @@
         </template>
     </category>
 
+
     <category>
         <pattern>^ relatie ^ publica ^</pattern>
         <that>Centrul de Combatere a Corupției // Linia Fierbinte // Relații cu Publicul</that>
@@ -32,7 +40,7 @@
     </category>
 
     <category>
-        <pattern>centru ^ combatere avea coruptiei</pattern>
+        <pattern>centru ^ combatere avea corupție</pattern>
         <that>Centrul de Combatere a Corupției // Linia Fierbinte // Relații cu Publicul</that>
         <template><srai>CONTACT CNA DGAC</srai></template>
     </category>

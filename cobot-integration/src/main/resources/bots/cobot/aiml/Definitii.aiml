@@ -32,6 +32,10 @@
         <pattern>^ <set>question</set> ^ <set>meaning</set> ^ spune cuvânta *</pattern>
         <template>`DexOnline get <star index="6"></star>`</template>
     </category>
+    <category>
+        <pattern>^ <set>question</set> ^ <set>meaning</set> ^ spune *</pattern>
+        <template>`DexOnline get <star index="6"></star>`</template>
+    </category>
     <!--la ce vă referiți când ziceți penitenciar-->
     <category>
         <pattern>^ <set>question</set> ^ <set>meaning</set> <set>timeperiods</set> zice cuvânta *</pattern>

@@ -1,9 +1,9 @@
-url:http://www.vrabie.net:8080
-name:#CoBoT
-email:adrian@vrabie.net
-gender:male
+url: http://cobot-dev.tk
+name: #CoBoT
+email: adrian@vrabie.net
+gender: male
 botmaster:Team Cobot
-organization:Centrul Național Anticorupție
-version:0.1.28
+organization: Centrul Național Anticorupție
+version: 0.1.28
 job: Stagiar în cardul Centrului Național Anticorupție
 

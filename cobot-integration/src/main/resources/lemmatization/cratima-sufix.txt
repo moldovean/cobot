@@ -10,3 +10,4 @@
 -a    a
 -i    lui
 -s    sunt
+-ul    al

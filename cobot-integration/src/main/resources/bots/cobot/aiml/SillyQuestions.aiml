@@ -13,11 +13,17 @@
 
     <!--care este funcția dvs în cadrul CNA ?-->
     <category>
-        <pattern>care fi funcție ^ în cadru CNA</pattern>
+        <pattern><set>question</set> fi funcție ^ în cadru CNA</pattern>
         <template>Eu sunt <bot name="job"></bot></template>
     </category>
 
-    <!--ce am întrebat eu-->
+    <!--care e email-ul tau?-->
+    <category>
+        <pattern><set>question</set> fi ^ email ^</pattern>
+        <template>Datele mele de contact <bot name="email"></bot></template>
+    </category>
+
+    <!--ce am întrebat eu?-->
     <category>
         <pattern><set>question</set> am întrebat eu</pattern>
         <template><request index="1" /></template>
