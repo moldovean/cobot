@@ -3,9 +3,30 @@
 
 
 	<!-- Where is CNA? -->
+	<!--unde se află cna?-->
+	<!--unde este sediul cna-ului-->
+	<category>
+		<pattern>CNA</pattern>
+		<template>Cu ce ați putea să vă ajut?</template>
+	</category>
+
 	<category>
 		<pattern>CNA LOCATION</pattern>
 		<template>Chisinau, bd. Stefan cel Mare si Sfint, 198. Cod postal: MD-2004. <srai>PE CINE PUTEA CONTACTA</srai></template>
+	</category>
+
+	<!--unde este cantora cna-ului-->
+	<category>
+		<pattern>UNDE fi ^ CNA ^</pattern>
+		<template><star index="1"></star> CNA se află pe: <srai>CNA LOCATION</srai> <srai>PE CINE PUTEA CONTACTA</srai></template>
+	</category>
+	<category>
+		<pattern>UNDE sine afla ^ CNA ^</pattern>
+		<template><star index="1"></star> CNA se află pe: <srai>CNA LOCATION</srai> <srai>PE CINE PUTEA CONTACTA</srai></template>
+	</category>
+	<category>
+		<pattern>UNDE fi CNA</pattern>
+		<template>CNA se află pe: <srai>CNA LOCATION</srai> <srai>PE CINE PUTEA CONTACTA</srai></template>
 	</category>
 
 	<category>

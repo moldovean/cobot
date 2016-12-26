@@ -11,3 +11,4 @@
 -i    lui
 -s    sunt
 -ul    al
+-ului    la

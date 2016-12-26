@@ -8,6 +8,7 @@
     <!--la ce vă referiți când spuneți cuvântul penitenciar-->
     <!--La ce va referiți atunci când spuneți cuvântul corupție-->
 
+
     <category>
         <pattern>^ <set>question</set> ^ <set>meaning</set> ^ <set>cnadef</set></pattern>
         <template>
@@ -43,13 +44,13 @@
     </category>
 
     <category>
-        <pattern><set>question</set> <set>verb3p</set> <set>cnadef</set></pattern>
+        <pattern><set>question</set> <set>is</set> <set>cnadef</set></pattern>
         <template>
             <star index="3"></star>, conform definiției www.cna.md : <map><name>cnadef</name><star index="3"></star></map> </template>
     </category>
 
     <category>
-        <pattern><set>question</set> <set>verb3p</set> *</pattern>
+        <pattern><set>question</set> <set>is</set> *</pattern>
         <template>`DexOnline get <star index="3"></star>`</template>
     </category>
 

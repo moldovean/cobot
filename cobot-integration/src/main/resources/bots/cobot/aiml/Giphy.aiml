@@ -3,7 +3,7 @@
 
     <category>
         <pattern>CE înseamnă *</pattern>
-        <template>`DexOnline getDexDefinition <star index="1"></star>`</template>
+        <template>`DexOnline get <star index="1"></star>`</template>
     </category>
 
     <category>

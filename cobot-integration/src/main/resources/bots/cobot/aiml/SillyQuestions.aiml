@@ -1,7 +1,11 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <aiml version="2.0" encoding = "UTF-8">
 
-
+    <!--Unde vă pot găsi?-->
+    <category>
+        <pattern><set>question</set> ^ putea găsi</pattern>
+        <template>Eu mă aflu: <bot name="location"></bot> Încercați "Unde se află CNA?" </template>
+    </category>
 
     <!--cum pot scăpa de corupție  ?-->
     <category>
