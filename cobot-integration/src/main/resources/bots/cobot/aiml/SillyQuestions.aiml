@@ -1,11 +1,20 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <aiml version="2.0" encoding = "UTF-8">
+
+
+
     <!--cum pot scăpa de corupție  ?-->
     <category>
         <pattern><set>question</set> ^ putea ^ <set>sillyverbs</set> ^ corupție</pattern>
         <template>
             Fii intransigent, încurajează-i și pe alții să raporteze cazurile de corupție la CNA.
         </template>
+    </category>
+
+    <!--care este funcția dvs în cadrul CNA ?-->
+    <category>
+        <pattern>care fi funcție ^ în cadru CNA</pattern>
+        <template>Eu sunt <bot name="job"></bot></template>
     </category>
 
     <!--ce am întrebat eu-->
@@ -16,7 +25,7 @@
 
     <!--numără până la 10-->
     <category>
-        <pattern>numără până la <set>number</set></pattern>
+        <pattern>număra până la <set>number</set></pattern>
         <template>
             <think><set name="count">0</set></think>
             <condition name="count">

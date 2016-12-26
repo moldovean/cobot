@@ -5,4 +5,5 @@ gender:male
 botmaster:Team Cobot
 organization:Centrul Național Anticorupție
 version:0.1.28
+job: Stagiar în cardul Centrului Național Anticorupție
 

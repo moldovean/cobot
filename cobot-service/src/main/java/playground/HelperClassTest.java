@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class HelperClassTest {
     public static void main(String[] args) {
-        String arguments = "DexOnline getDexDefinition cartier";
+        String arguments = "DexOnline get debil";
         List<String> argts = util.ArgumentTokenizer.tokenize(arguments);
         System.out.println(argts);
         System.out.println(util.HelperClass.callHelperClass(argts));;

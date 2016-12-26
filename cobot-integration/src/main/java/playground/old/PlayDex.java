@@ -17,7 +17,7 @@ public class PlayDex {
         while(!word.equals("q")){
             System.out.print("Cauta: ");
             word = br.readLine();
-            System.out.println(HelperClass.callHelperClass(Arrays.asList("DexOnline","getDexDefinition",word)));
+            System.out.println(HelperClass.callHelperClass(Arrays.asList("DexOnline","get",word)));
         }
     }
 }

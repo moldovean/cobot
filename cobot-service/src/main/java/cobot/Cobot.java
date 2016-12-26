@@ -65,11 +65,13 @@ public class Cobot {
         //post-bot-processing
         rexExp = Pattern.compile("`(.+?)`");
         matcher = rexExp.matcher(answer);
-        if(matcher.find()){
+        while(matcher.find()){
             arguments = ArgumentTokenizer.tokenize(matcher.group(1));
-            //String classResult = HelperClass.callHelperClass(arguments);
-            answer += HelperClass.callHelperClass(arguments);
-            return answer;
+            String classResult = HelperClass.callHelperClass(arguments);
+            answer = matcher.replaceFirst(classResult);
+            matcher = rexExp.matcher(answer);
+            //answer += HelperClass.callHelperClass(arguments);
+            //return answer;
         }
 
         return answer;

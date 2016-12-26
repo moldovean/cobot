@@ -43,6 +43,7 @@
         <template>
             <star index="3"></star>, conform definiției www.cna.md : <map><name>cnadef</name><star index="3"></star></map> </template>
     </category>
+
     <category>
         <pattern><set>question</set> <set>verb3p</set> *</pattern>
         <template>`DexOnline get <star index="3"></star>`</template>
