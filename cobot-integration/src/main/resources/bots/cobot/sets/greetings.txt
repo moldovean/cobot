@@ -1,27 +1,28 @@
 Sal
 saluta
-Salut
+hey
 salut
-Saluut
-Salutare
-Salve
+salut
+saluut
+salutare
+salve
 salvă
-Servus
-Bun ziuă
-Buna seara
-Buna dimineata
-Buna dimineatza
-Bună ziua
-Bună seara
-Bună dimineața
-Bună dimineatza
-Bună
-Noroc
-Norok
-Noroace
-Noroashi
-Noroaşi
-Hi
+servus
+bun ziuă
+buna seara
+buna dimineata
+buna dimineatza
+bună ziua
+bună seara
+bună dimineața
+bună dimineatza
+bună
+noroc
+norok
+noroace
+noroashi
+noroaşi
+hi
 hey!
 heey
 heeey
