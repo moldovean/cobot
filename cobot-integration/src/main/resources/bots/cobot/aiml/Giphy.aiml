@@ -2,7 +2,7 @@
 <aiml version="2.0" encoding = "UTF-8">
 
     <category>
-        <pattern>CE înseamnă *</pattern>
+        <pattern>CE însemna *</pattern>
         <template>`DexOnline get <star index="1"></star>`</template>
     </category>
 
@@ -33,6 +33,13 @@
 
     <category>
         <pattern><set>wish</set> eu vrea <set>image</set> cu o *</pattern>
+        <template>
+            <srai>IMAGINE <star index="3"></star></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>mai <set>wish</set> eu vrea <set>image</set> cu o *</pattern>
         <template>
             <srai>IMAGINE <star index="3"></star></srai>
         </template>
