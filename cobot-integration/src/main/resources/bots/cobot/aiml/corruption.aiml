@@ -27,10 +27,30 @@
         <template>Ați dori să depuneți o plângere în mod oficial asupra acestui caz?</template>
     </category>
 
+    <!--Aș dori să Vă atenționez că puteți fi trași la răspundere penală dacă oferiți informații false sau neveridice.-->
     <category>
         <pattern>DA</pattern>
         <that>Ați dori să depuneți o plângere în mod oficial asupra acestui caz</that>
+        <template>Aș dori să Vă atenționez că puteți fi trași la răspundere penală dacă oferiți informații false sau neveridice, sunteți siguri?</template>
+    </category>
+
+
+    <category>
+        <pattern>NU</pattern>
+        <that>Ați dori să depuneți o plângere în mod oficial asupra acestui caz</that>
+        <template>Nici o problemă. Oricum Vă mulțumim pentru cooperare, iar cazul menționat va fi luat în considerație la elaborarea politicilor publice!</template>
+    </category>
+
+    <category>
+        <pattern>DA</pattern>
+        <that>Aș dori să Vă atenționez că puteți fi trași la răspundere penală dacă oferiți informații false sau neveridice, sunteți siguri</that>
         <template>Atunci completați acest <a href="`WebAddresses getWebAddress denunț`">formular</a>. </template>
+    </category>
+
+    <category>
+        <pattern>NU</pattern>
+        <that>Aș dori să Vă atenționez că puteți fi trași la răspundere penală dacă oferiți informații false sau neveridice, sunteți siguri</that>
+        <template>Nici o problemă. Oricum Vă mulțumim pentru cooperare, iar cazul menționat va fi luat în considerație la elaborarea politicilor publice!</template>
     </category>
 
     <category>
@@ -48,11 +68,6 @@
 
     <!--if yes-->
 
-    <category>
-        <pattern>NU</pattern>
-        <that>Ați dori să depuneți o plângere în mod oficial asupra acestui caz</that>
-        <template>Nici o problemă. Oricum Vă mulțumim pentru cooperare, iar cazul menționat va fi luat în considerație la elaborarea politicilor publice!</template>
-    </category>
 
     <!--not corruption-->
     <category>

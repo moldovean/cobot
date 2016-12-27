@@ -25,4 +25,20 @@
         <template>Cazul Dvs este frecvent. <srai>CORRUPTION</srai></template>
     </category>
 
+    <!--directoarea liceului ne cere sa achităm pentru fondație-->
+    <category>
+        <pattern><set>professions</set> <set>institutions</set> nou cere său achita pentru ^ <set>institutions</set></pattern>
+        <template>Situația descrisă este omniprezentă în instituțiile de învățământ. Din păcate, această problemă ține de competența Ministerului Educației. <srai>REPORT IT</srai></template>
+    </category>
+    <category>
+        <pattern><set>professions</set> nou cere său achita pentru ^ <set>institutions</set></pattern>
+        <template>Situația descrisă este omniprezentă în instituțiile de învățământ. Din păcate, această problemă ține de competența Ministerului Educației. <srai>REPORT IT</srai></template>
+    </category>
+
+    <!--directoarea liceului ne cere 200 de lei pentru note mai bune-->
+    <category>
+        <pattern><set>professions</set> <set>institutions</set> nou cere ^ pentru ^ </pattern>
+        <template><srai>CORRUPTION</srai></template>
+    </category>
+
 </aiml>

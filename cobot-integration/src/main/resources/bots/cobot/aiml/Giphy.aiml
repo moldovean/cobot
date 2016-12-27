@@ -12,9 +12,38 @@
     </category>
 
     <category>
-        <pattern><set>doresc</set> o <set>imagine</set> cu *</pattern>
+        <pattern><set>wish</set> o <set>image</set> cu *</pattern>
         <template>
             <srai>IMAGINE <star index="3"></star></srai>
         </template>
     </category>
+    <category>
+        <pattern><set>wish</set> vrea <set>image</set> cu *</pattern>
+        <template>
+            <srai>IMAGINE <star index="3"></star></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern><set>wish</set> eu vrea <set>image</set> cu *</pattern>
+        <template>
+            <srai>IMAGINE <star index="3"></star></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern><set>wish</set> eu vrea <set>image</set> cu o *</pattern>
+        <template>
+            <srai>IMAGINE <star index="3"></star></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>arăta eu vrea *</pattern>
+        <template>
+            <srai>IMAGINE <star index="1"></star></srai>
+        </template>
+    </category>
+
+
 </aiml>
