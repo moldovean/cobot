@@ -71,21 +71,5 @@
         <template>Aceasta pare a fi un caz de corupție, ați dori să îl raportați?</template>
     </category>
 
-    <category>
-        <pattern>DA</pattern>
-        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați</that>
-        <template>Aș dori să Vă atenționez că puteți fi trași la răspundere penală dacă oferiți informații false sau neveridice. Sunteți sigur că doriți să îl raportați?</template>
-    </category>
 
-    <category>
-        <pattern>DA</pattern>
-        <that>Aș dori să Vă atenționez că puteți fi trași la răspundere penală dacă oferiți informații false sau neveridice. Sunteți sigur că doriți să îl raportați</that>
-        <template>Atunci completați acest <a href="www.cna.md">formular</a>.</template>
-    </category>
-
-    <category>
-        <pattern>NU</pattern>
-        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați</that>
-        <template>Atunci să aveți o zi cât mai plăcută, iar în caz că depistați vre-un caz de corupție reveniți din nou</template>
-    </category>
 </aiml>

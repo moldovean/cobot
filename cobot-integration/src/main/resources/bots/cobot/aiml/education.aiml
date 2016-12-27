@@ -2,8 +2,8 @@
 <aiml version="2.0" encoding = "UTF-8">
 
     <category>
-        <pattern>abcde</pattern>
-        <template>edcba</template>
+        <pattern>abc</pattern>
+        <template>defghijklmnop</template>
     </category>
 
     <!--Profesoara ne pune note joase daca nu vrem să-i oferim cadouri scumpe.-->
@@ -16,13 +16,13 @@
     <!--Profesoara ne pune note joase-->
     <category>
         <pattern><set>professions</set> nou pune nota jos </pattern>
-        <template>Nu seamana cu un caz de coruptie.</template>
+        <template> Serios? <srai>NOT CORRUPTION</srai></template>
     </category>
 
     <!--mie mi s-a cerut 200 de lei dacă aș vrea să am notă mai mare de 5-->
     <category>
-        <pattern>^ avea cere ^ leu ^ dacă ^ vrea ^ nota mai ^ de 5</pattern>
-        <template>Cazul dvs pare a fi un caz de corupție <srai>CORRUPTION</srai></template>
+        <pattern>^ avea cere ^ leu ^ dacă ^ vrea ^ nota mai ^ de 5 ^</pattern>
+        <template>Cazul Dvs este frecvent. <srai>CORRUPTION</srai></template>
     </category>
 
 </aiml>

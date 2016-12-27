@@ -15,7 +15,7 @@
         <template><srai>CORRUPTION</srai></template>
     </category>
 
-
+    <!--Aș dori să Vă atenționez că puteți fi trași la răspundere penală dacă oferiți informații false sau neveridice. Sunteți sigur că doriți să îl raportați?-->
     <!--report corruption-->
     <category>
         <pattern>CORRUPTION</pattern>
@@ -33,7 +33,20 @@
         <template>Atunci completați acest <a href="`WebAddresses getWebAddress denunț`">formular</a>. </template>
     </category>
 
-        <!--if yes-->
+    <category>
+        <pattern>DA</pattern>
+        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați</that>
+        <template>REPORT IT</template>
+    </category>
+
+
+    <category>
+        <pattern>NU</pattern>
+        <that>Aceasta pare a fi un caz de corupție, ați dori să îl raportați</that>
+        <template>Atunci să aveți o zi cât mai plăcută, iar în caz că depistați vre-un caz de corupție reveniți din nou</template>
+    </category>
+
+    <!--if yes-->
 
     <category>
         <pattern>NU</pattern>

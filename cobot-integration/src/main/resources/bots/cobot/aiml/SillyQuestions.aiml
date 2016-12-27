@@ -1,6 +1,12 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <aiml version="2.0" encoding = "UTF-8">
 
+    <!--cine te-a făcut?-->
+    <category>
+        <pattern><set>question</set> tu avea face ^</pattern>
+        <template>Iaka echipa: <bot name="botmaster"></bot> </template>
+    </category>
+
     <!--Unde vă pot găsi?-->
     <category>
         <pattern><set>question</set> ^ putea găsi</pattern>
@@ -11,7 +17,7 @@
     <category>
         <pattern><set>question</set> ^ putea ^ <set>sillyverbs</set> ^ corupție</pattern>
         <template>
-            Fii intransigent, încurajează-i și pe alții să raporteze cazurile de corupție la CNA.
+            Fii intransigent, ca mine, încurajează-i și pe alții să raporteze cazurile de corupție la CNA.
         </template>
     </category>
 
