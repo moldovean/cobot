@@ -61,7 +61,7 @@
 					<div valign="bottom" class="messages_content">
 						<!-- Bot message container -->
 						<div class="bot_container">
-							<span> Află la care întrebări îţi poate răspunde CoBoT (ver Grivei) <a class="link_bot" href="#">aici</a> !</span>
+							<span> Află la care întrebări îţi poate răspunde CoBoT (ver Grivei) <a class="link_bot" href="guide_page.html">aici</a> !</span>
 							<p class="start_bot_time">2:47pm</p>
 						</div>
 					</div>
